@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: #fceaea; */
+  background-color: rgb(230, 218, 240);
+  /* background-repeat: no-repeat; */
+
+  /* background-image: url(https://m.media-amazon.com/images/I/51exLavWhXL.png); */
+  position: relative;
+}
+#img1 {
+  position: absolute;
+  z-index: -1;
+  right: 300px;
+  top: -20px;
+}
+/* #img2 {
+  position: absolute;
+  z-index: -1;
+  left: 230px;
+  top: 0px;
+} */
+#img3 {
+  position: absolute;
+  z-index: 1;
+  left: 290px;
+  top: 380px;
+}
+#WeatherInfo {
+  background: #fceaea;
+  height: auto;
+  width: 500px;
+  margin-top: 120px;
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 20px rgb(193, 136, 246);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url(./images/cloud.jpeg);
+  background-repeat: no-repeat;
+  background-size: 500px 350px; */
+  /* position: absolute;
+  z-index: 2; */
+}
+#head {
+  text-align: center;
+  color: rgb(100, 7, 187);
+  font-size: 35px;
+}
+#cityInfo {
+  width: 220px;
+  height: 50px;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px purple;
+}
+#cityInfo:focus {
+  /* background: rgb(222, 206, 238); */
+  border: none;
+  outline: none;
+}
+#searchBtn {
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: chocolate;
+  background-color: white;
+  box-shadow: 1px 1px 10px purple;
+}
+#searchBtn:focus {
+  background: rgb(222, 206, 238);
+  border: none;
+  outline: none;
+}
+#WeatherInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cityName,
+#temperature,
+#weatherDescription {
+  color: chocolate;
+  margin-top: 10px;
+  font-size: 25px;
+}
+#weatherDescription {
+  font-size: 22px;
+}
